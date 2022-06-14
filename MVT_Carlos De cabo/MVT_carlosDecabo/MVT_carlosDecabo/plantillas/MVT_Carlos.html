@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>       
+        <meta charset="utf-8">
+        <title>CARLOS DE CABO MVT</title>
+    </head>
+
+<body> 
+    <p style="text-align:center">FAMILIARES MVT CARLOS DE CABO</p>
+        {% for c in familia %}
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" value="{{c.nombre}}">
+        <br/> <br/>
+        <label  for="apellido">Apellido: </label>
+        <input  type="text" name="apellido" id="apellido" value="{{c.apellido}}">
+        <br/> <br/>
+        <label  for="Fecha">Fecha Nacimiento: </label>
+        <input type="text" name="Fecha" id="Fecha"  value="{{c.fecha_nacimiento}}">
+        <br/> <br/>
+        <label  for="Edad">Edad: </label>
+        <input type="text" name="edad" id="edad"  value="{{c.edad}}">
+        <br/> <br/>
+                    <hr size="5px"  align="center" color="red"/>
+        <br/> <br/>
+        {% endfor %}
+               
+</body>
+
+</html>
